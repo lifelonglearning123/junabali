@@ -1311,55 +1311,24 @@
 
         <div class="contact-form reveal">
           <h3>Send Me a Message</h3>
-          <form onsubmit="handleSubmit(event)">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="fname" placeholder="Your first name" required />
-              </div>
-              <div class="form-group">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname" placeholder="Your last name" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="you@company.com" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="Optional but helpful" />
-            </div>
-            <div class="form-group">
-              <label for="business">Business Type</label>
-              <select id="business" name="business">
-                <option value="">Select a sector...</option>
-                <option>Electrical Contracting</option>
-                <option>Mechanical &amp; Plumbing</option>
-                <option>HVAC &amp; Refrigeration</option>
-                <option>Facilities Management</option>
-                <option>Building Services</option>
-                <option>Other Trades</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="turnover">Approximate Annual Turnover</label>
-              <select id="turnover" name="turnover">
-                <option value="">Select a range...</option>
-                <option>Under £250,000</option>
-                <option>£250,000 – £500,000</option>
-                <option>£500,000 – £1 million</option>
-                <option>£1 million – £3 million</option>
-                <option>Over £3 million</option>
-                <option>Prefer not to say</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Tell Me About Your Business</label>
-              <textarea id="message" name="message" placeholder="A brief overview of your business, location, and reason for considering a sale..." required></textarea>
-            </div>
-            <button type="submit" class="btn-form" id="submit-btn">Send Enquiry</button>
-          </form>
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/5CBA6YLLrLWlk3IWAr9d"
+            style="width:100%;height:652px;border:none;border-radius:3px"
+            id="inline-5CBA6YLLrLWlk3IWAr9d"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Junab Ali contact form"
+            data-height="652"
+            data-layout-iframe-id="inline-5CBA6YLLrLWlk3IWAr9d"
+            data-form-id="5CBA6YLLrLWlk3IWAr9d"
+            title="Junab Ali contact form">
+          </iframe>
+          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
         </div>
       </div>
     </div>
@@ -1406,19 +1375,7 @@
     });
 
     /* ─── FORM SUBMIT ─── */
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = document.getElementById('submit-btn');
-      btn.textContent = 'Message Sent ✓';
-      btn.style.background = '#2d7a47';
-      btn.disabled = true;
-      setTimeout(() => {
-        btn.textContent = 'Send Enquiry';
-        btn.style.background = '';
-        btn.disabled = false;
-        e.target.reset();
-      }, 4000);
-    }
+
   </script>
 
 </body>
